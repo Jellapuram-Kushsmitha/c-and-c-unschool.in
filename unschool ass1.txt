@@ -1,0 +1,67 @@
+//c program to store details of 5 employees and print them using stuctures
+#include<stdio.h>  
+#include <string.h>    
+struct employee      
+{         
+    char name[50]; 
+    int id;
+    int experience;
+    float salary; 
+    };    
+int main()
+{
+    int i=0;
+    struct employee e1,e2,e3,e4,e5;
+   //storing employee 1 details     
+   strcpy(e1.name, "Kushsmitha");
+   e1.id=101;  
+   e1.experience=3;
+   e1.salary=100000;   
+   //storing employee 2 details
+   strcpy(e2.name, "Sruthi");
+   e2.id=102;  
+   e2.experience=1;
+   e2.salary=50000; 
+   //storing employee 3 details
+   strcpy(e3.name, "Swathi");
+   e3.id=103;  
+   e3.experience=2;
+   e3.salary=70000;
+   //storing employee 4 details
+   strcpy(e4.name, "Ramya");
+   e4.id=104;  
+   e4.experience=1;
+   e4.salary=50000;
+   //storing employee 5 details
+   strcpy(e5.name, "Keerthi");
+   e5.id=105;  
+   e5.experience=0;
+   e5.salary=20000;
+     
+   //printing employee 1 details
+   printf( "Employee 1 name       : %s\n", e1.name); 
+   printf( "Employee 1 id         : %d\n", e1.id);  
+   printf( "Employee 1 experience : %d\n", e1.experience);  
+   printf( "Employee 1 salary     : %f\n\n", e1.salary);    
+   //printing employee 2 details
+   printf( "Employee 2 name       : %s\n", e2.name); 
+   printf( "Employee 2 id         : %d\n", e2.id);  
+   printf( "Employee 2 experience : %d\n", e2.experience);  
+   printf( "Employee 2 salary     : %f\n\n", e2.salary);   
+   //printing employee 3 details
+   printf( "Employee 3 name       : %s\n", e3.name); 
+   printf( "Employee 3 id         : %d\n", e3.id);  
+   printf( "Employee 3 experience : %d\n", e3.experience);  
+   printf( "Employee 3 salary     : %f\n\n", e3.salary);    
+   //printing employee 4 details
+   printf( "Employee 4 name       : %s\n", e4.name); 
+   printf( "Employee 4 id         : %d\n", e4.id);  
+   printf( "Employee 4 experience : %d\n", e4.experience);  
+   printf( "Employee 4 salary     : %f\n\n", e4.salary);    
+   //printing employee 5 details
+   printf( "Employee 5 name       : %s\n", e5.name); 
+   printf( "Employee 5 id         : %d\n", e5.id);  
+   printf( "Employee 5 experience : %d\n", e5.experience);  
+   printf( "Employee 5 salary     : %f\n", e5.salary);    
+   return 0;
+} 
