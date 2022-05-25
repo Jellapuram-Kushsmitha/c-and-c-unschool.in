@@ -1,0 +1,54 @@
+#include<stdio.h>
+#include<stdlib.h>
+#include<time.h>
+#include<string.h>
+int main()
+{
+    int value,result;
+    int random=0;
+    char k[10];
+    char str1[10]="quit";
+    //continuation of game
+    while(1)
+    {
+    //genarating random number
+    srand (time(0));
+    random=rand()%30+1;
+    
+    printf("Please choose rock,paper,scissors or quit:");
+    scanf("%s",k);
+    strlen(k);
+    printf("\nYou chose:%s",k);
+    
+    //checking quit option
+    value=strcmp(str1,k);
+        if (value==0)
+        return 0;
+     {
+         if(random<=10)
+         printf("\nComputer choose:rock");
+         else if((random>10) && (random<=20))
+         printf("\nComputer choose:paper");
+         else 
+         printf("\nCompute choose:scissors");
+     }
+    
+        //checking all the conditions
+        if(strlen(k)==4 && (random>10 && random<=20))
+        printf("\nResult:Computer Won!!\n");
+        else if (strlen(k)==4 && random>20)
+        printf("\nResult:You Won!!\n");
+        else if(strlen(k)==5 && random<=10)
+        printf("\nResult:You Won!!\n");
+        else if(strlen(k)==5 && random>20)
+        printf("\nResult:Computer Won!!\n");
+        else if(strlen(k)==8 && random<=10)
+        printf("\nResult:Computer Won!!\n");
+        else if(strlen(k)==8 && (random>10 && random<=20))
+        printf("\nResult:You Won!!\n");
+        else
+        printf("\nNo one won!!\n");
+    }
+}
+
+   
